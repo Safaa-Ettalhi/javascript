@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" language="javascript">
+    function generer(){
+     let number=Math.floor(Math.random()*10);
+     var cmp=0;
+     var essai=prompt("donner un nbr");
+     cmp=1;
+   
+     while(essai!=number){
+
+        if(essai<number){
+            essai=prompt("le nbr doit etre plus grand");
+        cmp++;
+        }else{
+            essai=prompt("le nbr doit etre plus petit")
+        cmp++;
+        }
+        
+    }
+        alert("gagné \n le nbr dessaie est:"+cpm);
+    } 
+    generer();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
