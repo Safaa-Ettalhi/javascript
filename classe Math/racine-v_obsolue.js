@@ -3,7 +3,7 @@ function afficher(){
     
     let affich=document.getElementById("resultat");
     let res=Math.sqrt(nbr);
-    affich.innerHTML="le resultat est "+ res;
+    affich.innerHTML="le resultat est  "+ res;
     
 }
 function afficherv(){
