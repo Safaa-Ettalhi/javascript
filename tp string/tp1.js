@@ -10,7 +10,7 @@ function verif(){
     let ch1=document.getElementById("ch1").value;
     let ch2=document.getElementById("ch2").value;
     if(ch1==ch2){
-        alert("les deux chaines sont identiques");
+        alert(" les deux chaines sont identiques");
     }else{
         alert("chaine non identiques")
     }
