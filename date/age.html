@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcul de l'âge</title>
+    <script>
+        function calculerAge() {
+            // Récupérer de date de naissance saisie
+            let dateNaissance = new Date(document.getElementById("d").value);
+            let aujourdHui = new Date(); // Date actuelle
+
+            // Calculer l'âge
+            let age = aujourdHui.getFullYear() - dateNaissance.getFullYear();
+            let mois = aujourdHui.getMonth() - dateNaissance.getMonth();
+            let jour = aujourdHui.getDate() - dateNaissance.getDate();
+
+            // Si le mois ou jour actuel est avant celui de la date de naissance, on soustrait une année
+            if (mois < 0 || (mois === 0 && jour < 0)) {
+                age--;
+            }
+
+            
+            alert("Votre âge est : " + age + " ans.");
+        }
+    </script>
+</head>
+<body>
+
+    <form >
+        <label >Entrez votre date de naissance :</label>
+        <input type="date" id="d">
+        <button type="submit" onclick="calculerAge()">Calculer l'âge</button>
+    </form>
+
+</body>
+</html>
