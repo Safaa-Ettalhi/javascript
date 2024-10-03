@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script type="text/javascript" language="javascript">
+    function Afficher(){
+        let date = new Date(document.getElementById("d").value);
+        //extraire lannee et le mois
+        let annee = date.getFullYear();
+        let mois= date.getMonth()+1;//getMonth return de 0 a 11
+        //nbr de jour
+         let nbrjour = new Date(annee,mois,0).getDate();
+         alert("Le nombre de jours dans le mois est : " + nbrjour);
+       
+    }
+</script>
+<body>
+    <form action="">
+        <label for="">entrer votre date de naissance</label>
+        <input type="date" name="" id="d">
+        <button type="submit" onclick="Afficher()">Afficher</button>
+    </form>
+</body>
+</html>
